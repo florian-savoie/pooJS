@@ -28,7 +28,7 @@ poney.pattes = 3 ;
 var chien = new Animal('broly') ; 
 var chat = new Animal('krilin') ; 
 */
-
+/*
 var Animal = function(nom){
     this.nom =  nom;
     }
@@ -56,4 +56,15 @@ var Animal = function(nom){
     }
     var roger = Object.create(poney) ; 
     roger.nom = 'roger' ;
-    
+    */
+
+    class Student {
+      ecole = 'jules ferry'
+
+      constructor(firstname ,lastname){
+         this.lastname = lastname ;
+         this.firstname = firstname ;
+      }
+    }
+    const john = new Student('jhon','doe')
+    const flo = new Student('florian','bostr')
