@@ -148,4 +148,23 @@ var Animal = function(nom){
         });
       
       }
-      
+      let nombreAleatoire = Math.floor(Math.random() * 10) + 1;
+let tentative = 0;
+let nombreUtilisateur;
+
+do {
+  nombreUtilisateur = parseInt(prompt("Devinez le nombre entre 1 et 10 :"));
+  tentative++;
+
+  if (isNaN(nombreUtilisateur)) {
+    alert("Veuillez entrer un nombre valide.");
+  } else if (nombreUtilisateur < nombreAleatoire) {
+    alert("Le nombre est plus grand. Essayez encore !");
+  } else if (nombreUtilisateur > nombreAleatoire) {
+    alert("Le nombre est plus petit. Essayez encore !");
+  }
+} while (nombreUtilisateur !== nombreAleatoire);
+
+alert(
+  `Bravo ! Vous avez deviné le nombre ${nombreAleatoire} en ${tentative} tentatives.`
+);
