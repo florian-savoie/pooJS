@@ -168,3 +168,9 @@ do {
 alert(
   `Bravo ! Vous avez deviné le nombre ${nombreAleatoire} en ${tentative} tentatives.`
 );
+
+var container = document.getElementById("containerHTML");
+element.setAttribute("pui", "Layout");
+container.removeAttribute("data-monAttribut");
+
+
