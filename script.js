@@ -57,7 +57,7 @@ var Animal = function(nom){
     var roger = Object.create(poney) ; 
     roger.nom = 'roger' ;
     */
-
+/*
     class Student {
       ecole = 'jules ferry'
 
@@ -172,5 +172,16 @@ alert(
 var container = document.getElementById("containerHTML");
 element.setAttribute("pui", "Layout");
 container.removeAttribute("data-monAttribut");
+*/
 
+let star = '*' ;
+let html ='';
+for (let i = 0; i < 10 ; i ++ ) {
+   
+for (let j = 0; j < i ; j ++ ) {
+html+= star ;
+}
+html+= '<br>' ;
+}
 
+console.log(html);
