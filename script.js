@@ -185,3 +185,23 @@ html+= '<br>' ;
 }
 
 console.log(html);
+
+let star2 = '*';
+let html2 = '';
+
+for (let i = 0; i < 10; i++) {
+    for (let j = 0; j < i; j++) {
+        html2 += star2;
+    }
+    html2 += '<br>';
+}
+
+console.log(html2);
+
+let html3 = '';
+
+for (let i = 1; i <= 10; i++) {
+    html3 += '*'.repeat(i) + '<br>';
+}
+
+console.log(html3);
